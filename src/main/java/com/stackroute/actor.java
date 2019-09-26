@@ -3,14 +3,6 @@ package com.stackroute.domain;
 public class actor {
 
     private String name;
-    private String gender;
-    private int age;
-
-    public actor(String name, String gender, int age) {
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
-    }
 
     public String getName() {
         return name;
@@ -22,6 +14,15 @@ public class actor {
 
     public int getAge() {
         return age;
+    }
+
+    private String gender;
+    private int age;
+
+    public actor(String name, String gender, int age) {
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
     }
 
     public void setName(String name) {
